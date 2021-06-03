@@ -1,0 +1,68 @@
+<div class="row">
+	<div class="col-md-6 col-lg-6">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'SERVICE' | trans }}</h4>
+			<h5 class="card-subtitle">{{ entity.model.name }}</h5>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'DATE' | trans }}</h4>
+			<h5 class="card-subtitle">{{ entity.createdAt | date('d/m/Y H:i') }}</h5>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'COMPANY' | trans }}</h4>
+			<h5 class="card-subtitle">{{ entity.company }}</h5>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'RUT' | trans }}</h4>
+			<h5 class="card-subtitle">{{ entity.rut }}</h5>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'COMERCIAL_ADDRESS' | trans }}</h4>
+			<h5 class="card-subtitle">{{ entity.comercialAddressStreet }} {{ entity.comercialAddressNumber }} - {{ entity.comercialAddressCity }}</h5>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'SERVICE_ADDRESS' | trans }}</h4>
+			<h5 class="card-subtitle">{{ entity.serviceAddressStreet }} {{ entity.serviceAddressNumber }} - {{ entity.serviceAddressCity }}</h5>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'CLIENT_NAME' | trans }}</h4>
+			<h5 class="card-subtitle">{{ entity.name }}</h5>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'CLIENT_PHONE' | trans }}</h4>
+			<h5 class="card-subtitle"><a href='tel:{{ entity.phone }}' target="_blank">{{ entity.phone }}</a></h5>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'CLIENT_EMAIL' | trans }}</h4>
+			<h5 class="card-subtitle"><a href='mailto:{{ entity.email }}' target="_blank">{{ entity.email }}</a></h5>
+		</div>
+	</div>
+	<div class="col-md-6 col-lg-6">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'FREQUENCE' | trans }}</h4>
+			<h5 class="card-subtitle">{{ entity.frequency }}</h5>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="form-group">
+			<h4 class="card-title">{{ 'OBSERVATION' | trans }}</h4>
+			<p class="card-subtitle">{{ entity.observation | default('N/E') }}</p>
+		</div>
+	</div>
+</div>

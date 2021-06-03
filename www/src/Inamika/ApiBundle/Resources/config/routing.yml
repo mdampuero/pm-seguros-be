@@ -1,0 +1,17 @@
+api_users:
+    resource: "@InamikaApiBundle/Resources/config/users.yml"
+
+api_settings:
+    resource: "@InamikaApiBundle/Resources/config/settings.yml"
+
+api_demos:
+    resource: "@InamikaApiBundle/Resources/config/demos.yml"
+
+api_customers:
+    resource: "@InamikaApiBundle/Resources/config/customers.yml"
+
+api_login:
+    resource: "@InamikaApiBundle/Resources/config/login.yml"
+
+api_cotizations:
+    resource: "@InamikaApiBundle/Resources/config/cotizations.yml"

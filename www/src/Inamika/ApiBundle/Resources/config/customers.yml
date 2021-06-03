@@ -1,0 +1,79 @@
+api_customers:
+    path:     /customers
+    defaults: { _controller: InamikaApiBundle:Customers:index }
+    methods: [GET]
+
+api_customers_get:
+    path:     /customers/{id}
+    defaults: { _controller: InamikaApiBundle:Customers:get }
+    methods: [GET]
+
+api_customers_orders:
+    path:     /customers/{id}/orders
+    defaults: { _controller: InamikaApiBundle:Customers:orders }
+    methods: [GET]
+
+api_customers_operators:
+    path:     /customersOperators/{id}
+    defaults: { _controller: InamikaApiBundle:Customers:operators }
+    methods: [GET]
+
+api_customers_refreshToken:
+    path:     /customers/{id}/refreshToken
+    defaults: { _controller: InamikaApiBundle:Customers:refreshToken }
+    methods: [PUT]
+
+api_customers_post:
+    path:     /customers
+    defaults: { _controller: InamikaApiBundle:Customers:post }
+    methods: [POST]
+
+api_customers_import:
+    path:     /customersImport
+    defaults: { _controller: InamikaApiBundle:Customers:import }
+    methods: [POST]
+    
+api_customers_postByEmail:
+    path:     /customersByEmail
+    defaults: { _controller: InamikaApiBundle:Customers:postByEmail }
+    methods: [POST]
+
+api_customers_post_customersOperators:
+    path:     /customersOperators/{id}
+    defaults: { _controller: InamikaApiBundle:Customers:customersOperators }
+    methods: [POST]
+
+api_customers_postValidate:
+    path:     /customersValidate/{id}
+    defaults: { _controller: InamikaApiBundle:Customers:validate }
+    methods: [POST]
+
+api_customers_postValidateConfirm:
+    path:     /customersValidateConfirm
+    defaults: { _controller: InamikaApiBundle:Customers:validateConfirm }
+    methods: [POST]
+
+api_customers_check:
+    path:     /customers_check
+    defaults: { _controller: InamikaApiBundle:Customers:check }
+    methods: [POST]
+
+api_customers_put:
+    path:     /customers/{id}
+    defaults: { _controller: InamikaApiBundle:Customers:put }
+    methods: [PUT]
+    
+api_customers_put_profile:
+    path:     /customersProfile/{id}
+    defaults: { _controller: InamikaApiBundle:Customers:profile }
+    methods: [PUT]
+
+api_customers_blankPassword:
+    path:     /customersBlankPassword/
+    defaults: { _controller: InamikaApiBundle:Customers:blankPassword }
+    methods: [PUT]
+
+api_customers_delete:
+    path:     /customers/{id}
+    defaults: { _controller: InamikaApiBundle:Customers:delete }
+    methods: [DELETE]
